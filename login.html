@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookly</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="icon" href="./assets/livro-alt.png">
+</head>
+<body style="background-color:ghostwhite;">
+
+<!-- PARTE SUPERIOR DO SITE -->
+
+    <div class="div_botoes_login">
+        <img src="./assets/livro-alt.png" alt="logo bookly" class="logo_topo" onclick="window.location.href='index.html'">
+        <button class="botao_login" onclick="window.location.href='login.html'">Login</button>
+        <button class="botao_registro" onclick="window.location.href='registro.html'">Sign Up</button>
+    </div>
+
+<!-- PARTE PRINCIPAL DO SITE -->
+    
+    <div>
+        
+        <form method="post" class="form_login" id="login">
+            <h1>Log in</h1>
+            <label for="usuario_lg">Usuário: </label>
+            <input 
+                type="text" 
+                id="user_lg"
+                placeholder="Digite seu nome de usuário"
+                minlength="2"
+                maxlength="20"
+                required>
+
+            <label for="senha_lg">Senha: </label>
+            <input
+                type="password"
+                id="senha_lg" 
+                placeholder="Digite sua senha" 
+                minlength="8"
+                maxlength="30"
+                required>
+            
+            <label for="lembrar_lg">Lembrar Login: </label>
+            <input type="checkbox" id="lembrar_lg">
+
+            <button type="submit" class="button_lg">Log in</button>
+            <p>ㅤNão tem uma conta ainda?<a href="registro.html"> Registre-se</a>
+            </p>
+            
+
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookly</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="icon" href="./assets/livro-alt.png">
+</head>
+<body style="background-color:ghostwhite;">
+    
+
+<!-- PARTE SUPERIOR DO SITE -->
+
+    <div class="div_botoes_login">
+        <img src="./assets/livro-alt.png" alt="logo bookly" class="logo_topo" onclick="window.location.href='index.html'">
+        <button class="botao_login" onclick="window.location.href='login.html'">Login</button>
+        <button class="botao_registro" onclick="window.location.href='registro.html'">Sign Up</button>
+    
+    </div>
+
+
+
+<!-- PARTE PRINCIPAL DO SITE -->
+    
+    <div>
+
+        <form method="post" id="form_signup">
+
+            <h1>Sign Up</h1>
+
+            <label for="user_su">Usuário:</label>
+            <input 
+                type="text"
+                id="user_su"
+                placeholder="Digite seu nome de usuário"
+                minlength="2"
+                maxlength="20"
+                required>
+
+            <label for="senha_su">Senha:</label>
+            <input 
+                type="password"
+                id="senha_su"
+                placeholder="Digite sua senha"
+                minlength="8"
+                maxlength="30"
+                required>
+
+            <label for="csenha_su">Confirmar a senha:</label>
+            <input 
+                type="password"
+                id="csenha_su"
+                placeholder="Confirme sua senha"
+                minlength="8"
+                maxlength="30"
+                required>
+
+            <button type="submit" id="button_su">Sign Up</button>
+
+        </form>
+
+    </div>
+    
+    <script src="./scripts/registro.js"></script>
+</body>
+</html>
